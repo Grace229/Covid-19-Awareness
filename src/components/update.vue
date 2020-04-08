@@ -35,7 +35,6 @@
 </b-list-group> 
 </b-card>
 </b-card-group>
-
     </div>
 </template>
 <script>
@@ -119,9 +118,9 @@ export default {
             {
           id: 10,
           place:'Nigeria',
-          new:'4',
-          recovered:'27',
-          confirmed:'224',
+          new:'16',
+          recovered:'44',
+          confirmed:'254',
           death:'5'
         },
         
@@ -161,6 +160,7 @@ h1{
   text-align: center;
   font-weight: bolder;
 }
+
 @media only screen and (max-width: 500px) and (min-width: 320px){
   #app{
   display: inline-flex;

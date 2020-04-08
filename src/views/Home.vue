@@ -36,6 +36,8 @@
       </b-col>
   </b-row>
 </b-container> 
+
+<Global />
   
   </div>
 </template>
@@ -46,6 +48,7 @@
        import Update  from '../components/update.vue'
          import Navbar  from '../components/Navbar.vue'
            import Symptom  from '../components/symptom.vue'
+            import Global  from '../components/Global.vue'
           
   
   
@@ -56,7 +59,8 @@ Prevention,
 Header,
 Update,
 Navbar,
-Symptom
+Symptom,
+Global
 
   },
   data(){
@@ -190,10 +194,10 @@ Symptom
   color: black;
   // background-color: blue;
   margin-bottom: 20px;
-
-
 }
-
+img{
+  height: 390px;
+}
 
 #nav {
  height: 800px;
