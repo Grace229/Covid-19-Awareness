@@ -2,25 +2,23 @@
   <div id="appy">
     <Navbar />
     <Header />
-     <Symptom />
+      <Symptom />
      <h1  style="font-weight: bold;text-align: center;margin-top:40px;">Preventive Measures</h1>
       <b-container class="bv-example-row">
   <b-row>
     <b-col cols="5">
+      <img :src="require('@/assets/header2.webp')">
+  <img :src="require('@/assets/header1.jpg')">
 
-<img :src="require('@/assets/header2.webp')">
-<img :src="require('@/assets/')">
+
       </b-col>
      <b-col cols="7">
      <Prevention v-for="item in items" :prevent='item' :key='item' />
-   
-
-    
-     
+  
  </b-col>
   </b-row>
 </b-container>
-     <b-container class="bv-example-row">
+     <b-container class="bv-example-row"> 
 
   <b-row>
     <b-col cols="3">
@@ -33,12 +31,12 @@
 </b-list-group>
     </b-col>
      <b-col cols="9">   
-       <!-- <h1>PRVENTIVE MEASURES</h1>   -->
+  
          <Update /> 
       </b-col>
   </b-row>
-</b-container>
- 
+</b-container> 
+  
   </div>
 </template>
 <script>
@@ -48,6 +46,7 @@
        import Update  from '../components/update.vue'
          import Navbar  from '../components/Navbar.vue'
            import Symptom  from '../components/symptom.vue'
+          
   
   
 export default {
@@ -58,6 +57,7 @@ Header,
 Update,
 Navbar,
 Symptom
+
   },
   data(){
     return{
@@ -193,10 +193,7 @@ Symptom
 
 
 }
-img{
-  width: 80%;
-  height: 400px;
-}
+
 
 #nav {
  height: 800px;
